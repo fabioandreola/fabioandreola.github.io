@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Fabio Andreola</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="grey lighten-4">
+
+
+    <!-- navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">Fabio Andreola</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="https://www.linkedin.com/in/fabio-andreola-12241434/"
+                            class="tooltipped btn-floating btn-small grey darken-4" data-position="bottom"
+                            data-tooltip="Linkedin">
+                            <i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    </header>
+    <section>
+        <h1 id="about">About</h1>
+        <hr />
+        <div class="row">
+            <div class="col s12 l6 offset-l1">
+                <img class="responsive-img materialboxed circle" src="img/me.jpg" />
+            </div>
+            <div class="col s12 l5 pull-l1">
+
+                <p><span class="highlight">Hi, my name is Fabio,</span> I am a Senior Backend Software Engineer and
+                    hands-on technology leader with over 15 years of
+                    experience delivering digital solutions using a multitude of technologies. Over the past few
+                    years I have specialized in designing and
+                    building complex solutions with "zero downtime" requirements for several Fortune 500 clients
+                    with great success using technologies such as
+                    Spring Boot, ActiveMQ, Kafka, Rabbit, Redis, Hazelcast, Consul, Apache Camel, Elasticsearch,
+                    MongoDB, Docker, Ansible,
+                    AWS (ECS, lambda, S3, Dynamo, Aurora, Elastic Cache, EC2) and others.
+                    When I am not designing and coding I like to spend my time reading technology blogs and
+                    playing
+                    with my daughter.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/parallax.jpeg" alt="">
+        </div>
+    </div>
+
+    <section>
+        <h1 id="experience">Experience</h1>
+        <hr />
+        <div class="row skills">
+            <div class="col s12 l4">
+                <div class="col-content skill center-align z-depth-1">
+                    <i class="large material-icons">computer</i>
+                    <h4>Development</h4>
+                    <p>Designed and developed several fully distributed web applications and microservices using Spring,
+                        Java, Kotlin, Groovy, Kafka, RabbitMQ, Nginx and others with complex technical requirements.
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="col-content skill center-align z-depth-1">
+                    <i class="large material-icons">cloud</i>
+                    <h4>DevOps</h4>
+                    <p>Implemented fully automated release management processes and complex CI/CD pipelines. Also, used
+                        tools such as ansible to automate infrastructure provisioning.
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="col-content skill center-align z-depth-1">
+                    <i class="large material-icons">group</i>
+                    <h4>Leadership</h4>
+                    <p>Led, mentored and served as the scrum master in several projects with tight deadlines and complex
+                        technical requirements.</p>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+  <footer class="page-footer grey darken-4">
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2020 Fabio Andreola</div>
+    </div>
+  </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true,
+                yearRange: 1
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+
+        });
+    </script>
+</body>
+
+</html>
