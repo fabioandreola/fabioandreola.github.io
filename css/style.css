@@ -1,3 +1,8 @@
+:root {
+    --primary-colour: #0d47a1;
+    --secondary-colour: #7b7a80;
+}
+
 header {
     background: url(../img/header.jpeg);
     background-size: cover;
@@ -7,14 +12,10 @@ header {
 
 body {
     font-family: 'Work Sans', sans-serif;
+    background-color: #EAE9E9;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Crimson Text', serif;
 }
 
@@ -28,17 +29,17 @@ p {
     text-align: justify;
     font-size: 1.5em;
     font-family: 'Crimson Text', serif;
-    color: rgb(123, 122, 128);
+    color: var(--secondary-colour);
 }
 
 h1 {
     margin-top: 0px;
-    color: #3f51b5;
+    color: var(--primary-colour);
 }
 
 .highlight {
     font-size: 1.1em;
-    color: #0d47a1;
+    color: var(--primary-colour);
 }
 
 section {
@@ -52,7 +53,7 @@ section {
 }
 
 h4 {
-    color: #0d47a1;
+    color:var(--primary-colour);
     text-align: center;
 }
 
